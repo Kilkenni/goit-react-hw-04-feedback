@@ -12,18 +12,15 @@ export function App() {
 
   const onFeedbackClick = (feedbackName) => {
     switch (feedbackName) {
-      case "good": {
+      case "good":
         setGoodFeedback(good + 1);
         break;
-      };
-      case "neutral": {
+      case "neutral":
         setNeutralFeedback(neutral + 1);
         break;
-      }
-      case "bad": {
+      case "bad":
         setBadFeedback(bad + 1);
         break;
-      }
       default: return;
     } 
   }
